@@ -1,70 +1,70 @@
-# CodingPlaner — 本地 AI 编码助手聚合网关
+# CodingPlaner — Local AI Coding Assistant Aggregation Gateway
 
-CodingPlaner 是一款专为开发者设计的 macOS 原生应用，旨在提供一个高效、安全且统一的本地 AI API 网关。它能够聚合国内外主流大模型厂商的服务，并将其转化为标准的 OpenAI 兼容接口，供各类 AI Coding IDE 无缝调用。
+CodingPlaner is a native macOS application designed for developers to provide a high-performance, secure, and unified local AI API gateway. It aggregates services from major AI model providers worldwide and transforms them into standard OpenAI-compatible interfaces for seamless use by various AI Coding IDEs.
 
-## 🚀 主要作用
+## 🚀 Key Benefits
 
-在 AI 驱动开发的时代，不同的 IDE 和插件（如 Cursor, Claude Code, OpenCode）往往需要配置不同的 API Key 和 Base URL。CodingPlaner 通过在本地建立一个轻量级代理服务，解决以下痛点：
-- **统一入口**：只需在 IDE 中配置一个本地地址（如 `http://localhost:55583/v1`），即可访问所有已激活的厂商模型。
-- **智能路由**：支持 `provider/model` 格式（如 `deepseek/deepseek-chat`），自动将请求转发至对应厂商。
-- **安全加固**：API Key 本地加密存储，不再明文暴露在 IDE 配置文件中。
-- **性能优化**：针对编码场景优化的流式 SSE 转发，提供丝滑的打字机响应体验。
+In the era of AI-driven development, different IDEs and plugins (such as Cursor, Claude Code, and OpenCode) often require configuring various API Keys and Base URLs. CodingPlaner solves these pain points by establishing a lightweight local proxy service:
+- **Unified Entry Point**: Simply configure a local address in your IDE (e.g., `http://localhost:55583/v1`) to access all activated provider models.
+- **Smart Routing**: Supports the `provider/model` format (e.g., `deepseek/deepseek-chat`), automatically forwarding requests to the corresponding provider.
+- **Enhanced Security**: API Keys are stored encrypted locally, no longer exposed in plain text within IDE configuration files.
+- **Performance Optimization**: Optimized streaming SSE forwarding for coding scenarios, providing a smooth typewriter-like response experience.
 
-## ✨ 核心功能
+## ✨ Core Features
 
-- **多厂商聚合管理**：图形化界面一键激活、配置及切换 AI 厂商。
-- **实时用量统计**：
-  - **Usage 面板**：按厂商统计 Token 消耗及请求占比，支持今日数据实时刷新。
-  - **Clients 面板**：自动识别并统计不同 IDE（如 Cursor, OpenCode）的使用频率。
-- **OpenCode 一键集成**：专为 OpenCode 优化，支持一键将本地配置同步至 OpenCode 配置文件，实现零配置上手。
-- **模型细粒度控制**：支持手动添加模型，并可自由勾选哪些模型对 IDE 可见。
-- **macOS 原生体验**：
-  - 菜单栏常驻，实时监控后台服务状态。
-  - 窗口关闭后自动隐藏 Dock 图标，保持桌面整洁，服务静默运行。
-  - 完整的**中英文多语言**支持。
-- **自动化服务管理**：内置端口冲突检测，修改配置后服务自动热重启。
+- **Multi-Provider Aggregation Management**: Activate, configure, and switch AI providers with one click through a graphical interface.
+- **Real-Time Usage Statistics**:
+  - **Usage Dashboard**: Statistics on Token consumption and request distribution by provider, supporting real-time daily data refresh.
+  - **Clients Dashboard**: Automatically identifies and tracks the usage frequency of different IDEs (e.g., Cursor, OpenCode).
+- **One-Click OpenCode Integration**: Specifically optimized for OpenCode, supporting one-click synchronization of local configurations to OpenCode configuration files for zero-config onboarding.
+- **Fine-Grained Model Control**: Manually add models and freely choose which models are visible to the IDE.
+- **Native macOS Experience**:
+  - Resides in the menu bar to monitor background service status in real-time.
+  - Automatically hides the Dock icon after the window is closed to keep the desktop tidy while the service runs silently.
+  - Full **English and Chinese** multi-language support.
+- **Automated Service Management**: Built-in port conflict detection and automatic hot-restart of the service after configuration changes.
 
-## 🌐 支持的大模型服务厂商
+## 🌐 Supported AI Model Providers
 
-目前已内置支持以下 **17 家** 厂商的 OpenAI 兼容接口：
-- **国内主流**：深度求索 (DeepSeek)、月之暗面 (Moonshot/Kimi)、小米大模型 (Xiaomi MiMo)、智谱 AI、火山引擎、阿里百炼、腾讯混元、 MiniMax、硅基流动 (SiliconFlow)。
-- **国际主流**：OpenAI、Anthropic、Google Gemini、Mistral AI、Groq、Cohere。
-- **聚合平台**：OpenRouter、Together AI。
+Currently built-in support for the following **17** providers' OpenAI-compatible interfaces:
+- **Major Domestic (China)**: DeepSeek, Moonshot/Kimi, Xiaomi MiMo, Zhipu AI, Volcengine, Alibaba Bailian, Tencent Hunyuan, MiniMax, SiliconFlow.
+- **Global Leaders**: OpenAI, Anthropic, Google Gemini, Mistral AI, Groq, Cohere.
+- **Aggregation Platforms**: OpenRouter, Together AI.
 
-## 💻 支持的下游 AI Coding IDE
+## 💻 Supported Downstream AI Coding IDEs
 
-任何支持 OpenAI 自定义 Base URL 的工具均可接入，特别针对以下工具进行了身份仿真与适配：
-- **OpenCode** (支持一键配置同步)
+Any tool that supports a custom OpenAI Base URL can be connected, with special identity simulation and adaptation for:
+- **OpenCode** (supports one-click configuration sync)
 - **Cursor**
-- **Claude Code** (已解决身份校验问题)
+- **Claude Code** (identity verification issues resolved)
 - **Roo Code (Roo Cline)**
 - **Continue.dev**
-- **Generic OpenAI Clients** (各类翻译、搜索插件等)
+- **Generic OpenAI Clients** (various translation and search plugins, etc.)
 
-## 🛠 技术架构
+## 🛠 Technical Architecture
 
-- **App 端**：基于 Swift 5.9 + SwiftUI 构建的 macOS 原生应用。
-- **后端服务**：基于 Node.js (TypeScript) + Fastify + better-sqlite3 构建的轻量级高性能网关。
-- **存储**：配置信息及 API Key 加密存储于 `~/.codingplan/config.json`，统计数据存储于 `~/.codingplan/usage.db`。
+- **App**: Native macOS application built with Swift 5.9 + SwiftUI.
+- **Backend Service**: Lightweight high-performance gateway built with Node.js (TypeScript) + Fastify + better-sqlite3.
+- **Storage**: Configuration information and encrypted API Keys are stored in `~/.codingplan/config.json`, and statistical data is stored in `~/.codingplan/usage.db`.
 
 ---
 
-## 🛠 开发与构建
+## 🛠 Development and Building
 
-### 环境要求
+### Requirements
 - macOS 13.0+
 - Node.js 18+
 - Xcode 15.0+
 
-### 后端构建
+### Backend Build
 ```bash
 cd service
 npm install
 npm run build
 ```
 
-### 应用运行
-直接使用 Xcode 打开 `CodePlaner/CodePlaner.xcodeproj` 并运行即可。应用启动时会自动拉起构建好的 Node.js 服务。
+### Running the App
+Open `CodePlaner/CodePlaner.xcodeproj` directly in Xcode and run it. The application will automatically launch the built Node.js service upon startup.
 
 ## 📄 License
 MIT License
