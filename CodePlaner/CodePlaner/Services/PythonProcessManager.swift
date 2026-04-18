@@ -114,6 +114,32 @@ class PythonProcessManager: ObservableObject {
         }
     }
 
+    private func setupEnvironment(launchPort: Int, serviceHost: String) -> [String: String] {
+        var env = ProcessInfo.processInfo.environment
+        env["PORT"] = "\(launchPort)"
+        env["HOST"] = serviceHost
+        
+        // Ensure common paths are in PATH
+        let home = FileManager.default.homeDirectoryForCurrentUser.path
+        let commonPaths = [
+            "/opt/homebrew/bin",
+            "/usr/local/bin",
+            "/usr/bin",
+            "/bin",
+            "/usr/sbin",
+            "/sbin",
+            "\(home)/.nvm/current/bin",
+            "\(home)/.npm-global/bin",
+            "\(home)/.bun/bin"
+        ]
+        
+        let currentPath = env["PATH"] ?? ""
+        let additionalPaths = commonPaths.joined(separator: ":")
+        env["PATH"] = currentPath.isEmpty ? additionalPaths : "\(additionalPaths):\(currentPath)"
+        
+        return env
+    }
+
     private func launchService(on launchPort: Int, serviceBaseDir: String) {
         let serviceHost = configManager?.allowLAN == true ? "0.0.0.0" : "127.0.0.1"
         let process = Process()
@@ -121,6 +147,7 @@ class PythonProcessManager: ObservableObject {
 
         let nodeBundlePath = (serviceBaseDir as NSString).appendingPathComponent("dist/index.js")
         let executablePath = (serviceBaseDir as NSString).appendingPathComponent("dist/codingplan-service")
+        let mainTsPath = (serviceBaseDir as NSString).appendingPathComponent("src/main.ts")
 
         if FileManager.default.fileExists(atPath: nodeBundlePath) && !shouldPreferDevelopmentLauncher {
             // Run Node.js bundle
@@ -130,6 +157,11 @@ class PythonProcessManager: ObservableObject {
         } else if FileManager.default.isExecutableFile(atPath: executablePath) && !shouldPreferDevelopmentLauncher {
             process.executableURL = URL(fileURLWithPath: executablePath)
             process.arguments = ["--host", serviceHost, "--port", "\(launchPort)"]
+        } else if FileManager.default.fileExists(atPath: mainTsPath) {
+            // Development mode - prefer bun for running src/main.ts
+            let bun = findBunInterpreter()
+            process.executableURL = URL(fileURLWithPath: bun)
+            process.arguments = ["run", mainTsPath, "--host", serviceHost, "--port", "\(launchPort)"]
         } else {
             let python = findPythonInterpreter(serviceDir: serviceBaseDir)
             process.executableURL = URL(fileURLWithPath: python)
@@ -137,6 +169,7 @@ class PythonProcessManager: ObservableObject {
         }
 
         process.currentDirectoryURL = URL(fileURLWithPath: serviceBaseDir)
+        process.environment = setupEnvironment(launchPort: launchPort, serviceHost: serviceHost)
 
         let pipe = Pipe()
         process.standardOutput = pipe
@@ -207,6 +240,23 @@ class PythonProcessManager: ObservableObject {
         }
     }
 
+    private func findTsxInterpreter() -> String {
+        let home = FileManager.default.homeDirectoryForCurrentUser.path
+        let candidates = [
+            "/opt/homebrew/bin/tsx",
+            "/usr/local/bin/tsx",
+            "/usr/bin/tsx",
+            "\(home)/.npm-global/bin/tsx",
+            "/opt/homebrew/bin/npx", // Fallback to npx tsx if tsx is not in path
+        ]
+
+        if let found = candidates.first(where: { FileManager.default.isExecutableFile(atPath: $0) }) {
+            return found
+        }
+        
+        return "/usr/bin/npx" // Last resort
+    }
+
     private func findNodeInterpreter() -> String {
         let home = FileManager.default.homeDirectoryForCurrentUser.path
         let candidates = [
@@ -217,6 +267,18 @@ class PythonProcessManager: ObservableObject {
         ]
 
         return candidates.first { FileManager.default.isExecutableFile(atPath: $0) } ?? "/usr/bin/node"
+    }
+
+    private func findBunInterpreter() -> String {
+        let home = FileManager.default.homeDirectoryForCurrentUser.path
+        let candidates = [
+            "\(home)/.bun/bin/bun",
+            "/opt/homebrew/bin/bun",
+            "/usr/local/bin/bun",
+            "/usr/bin/bun"
+        ]
+
+        return candidates.first { FileManager.default.isExecutableFile(atPath: $0) } ?? "/usr/local/bin/bun"
     }
 
     private func findPythonInterpreter(serviceDir: String) -> String {

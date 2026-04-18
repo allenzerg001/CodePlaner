@@ -45,6 +45,17 @@ export class ConfigManager {
     if (!this.config) {
       this.load();
     }
+    
+    // Override with environment variables if provided
+    const envPort = process.env.PORT || process.env.SERVICE_PORT;
+    if (envPort) {
+      this.config!.server.port = parseInt(envPort, 10);
+    }
+    const envHost = process.env.HOST || process.env.SERVICE_HOST;
+    if (envHost) {
+      this.config!.server.host = envHost;
+    }
+    
     return this.config!;
   }
 

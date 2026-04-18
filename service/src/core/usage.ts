@@ -1,7 +1,7 @@
 import path from 'node:path';
 import os from 'node:os';
 import fs from 'node:fs';
-import Database from 'better-sqlite3';
+import { Database } from 'bun:sqlite';
 import { UsageRecord } from '../models.js';
 
 export function parseClient(headers: Record<string, string | string[] | undefined>): string {
@@ -32,7 +32,7 @@ export function parseClient(headers: Record<string, string | string[] | undefine
 }
 
 export class UsageTracker {
-  private db: Database.Database;
+  private db: Database;
 
   constructor() {
     const home = os.homedir();
@@ -47,7 +47,7 @@ export class UsageTracker {
   }
 
   private initDb() {
-    this.db.exec(`
+    this.db.run(`
       CREATE TABLE IF NOT EXISTS usage (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         timestamp TEXT NOT NULL,

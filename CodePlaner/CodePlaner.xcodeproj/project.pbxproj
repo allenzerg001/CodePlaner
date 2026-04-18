@@ -106,7 +106,7 @@
 				9F777DF82F912AB800B5FCFD /* Sources */,
 				9F777DF92F912AB800B5FCFD /* Frameworks */,
 				9F777DFA2F912AB800B5FCFD /* Resources */,
-				AABBCC001122334455667788 /* Build Python Service */,
+				AABBCC001122334455667788 /* Build Backend Service */,
 			);
 			buildRules = (
 			);
@@ -238,7 +238,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AABBCC001122334455667788 /* Build Python Service */ = {
+		AABBCC001122334455667788 /* Build Backend Service */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -247,7 +247,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Build Python Service";
+			name = "Build Backend Service";
 			outputFileListPaths = (
 			);
 			outputPaths = (
