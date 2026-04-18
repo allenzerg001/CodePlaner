@@ -13,11 +13,13 @@ In the era of AI-driven development, different IDEs and plugins (such as Cursor,
 ## ✨ Core Features
 
 <p align="center">
-  <img src="docs/thumbnail/codeplaner_main1.png" width="45%" />
-  <img src="docs/thumbnail/codeplaner_main2.png" width="45%" />
+  <img src="docs/thumbnail/codeplaner_main1.png" width="80%" />
 </p>
 <p align="center">
-  <img src="docs/thumbnail/codeplaner_dropdown.png" width="40%" />
+  <img src="docs/thumbnail/codeplaner_main2.png" width="80%" />
+</p>
+<p align="center">
+  <img src="docs/thumbnail/codeplaner_dropdown.png" width="60%" />
 </p>
 
 - **Multi-Provider Aggregation Management**: Activate, configure, and switch AI providers with one click through a graphical interface.
