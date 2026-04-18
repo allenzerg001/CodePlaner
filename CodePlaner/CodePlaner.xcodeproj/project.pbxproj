@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		9F777E0A2F912ABA00B5FCFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F777DF42F912AB800B5FCFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F777DFB2F912AB800B5FCFD;
+			remoteInfo = CodePlaner;
+		};
+		9F777E142F912ABA00B5FCFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F777DF42F912AB800B5FCFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F777DFB2F912AB800B5FCFD;
+			remoteInfo = CodePlaner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F777DFC2F912AB800B5FCFD /* CodePlaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodePlaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F777E092F912ABA00B5FCFD /* CodePlanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodePlanerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F777E132F912ABA00B5FCFD /* CodePlanerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodePlanerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F777E542F91333600B5FCFD /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		9F777E562F91333D00B5FCFD /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9F777DFE2F912AB800B5FCFD /* CodePlaner */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CodePlaner;
+			sourceTree = "<group>";
+		};
+		9F777E0C2F912ABA00B5FCFD /* CodePlanerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CodePlanerTests;
+			sourceTree = "<group>";
+		};
+		9F777E162F912ABA00B5FCFD /* CodePlanerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CodePlanerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F777DF92F912AB800B5FCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F777E062F912ABA00B5FCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F777E102F912ABA00B5FCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F777DF32F912AB800B5FCFD = {
+			isa = PBXGroup;
+			children = (
+				9F777E542F91333600B5FCFD /* Package.swift */,
+				9F777E562F91333D00B5FCFD /* project.yml */,
+				9F777DFE2F912AB800B5FCFD /* CodePlaner */,
+				9F777E0C2F912ABA00B5FCFD /* CodePlanerTests */,
+				9F777E162F912ABA00B5FCFD /* CodePlanerUITests */,
+				9F777DFD2F912AB800B5FCFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F777DFD2F912AB800B5FCFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F777DFC2F912AB800B5FCFD /* CodePlaner.app */,
+				9F777E092F912ABA00B5FCFD /* CodePlanerTests.xctest */,
+				9F777E132F912ABA00B5FCFD /* CodePlanerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F777DFB2F912AB800B5FCFD /* CodePlaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F777E1D2F912ABA00B5FCFD /* Build configuration list for PBXNativeTarget "CodePlaner" */;
+			buildPhases = (
+				9F777DF82F912AB800B5FCFD /* Sources */,
+				9F777DF92F912AB800B5FCFD /* Frameworks */,
+				9F777DFA2F912AB800B5FCFD /* Resources */,
+				AABBCC001122334455667788 /* Build Python Service */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9F777DFE2F912AB800B5FCFD /* CodePlaner */,
+			);
+			name = CodePlaner;
+			packageProductDependencies = (
+			);
+			productName = CodePlaner;
+			productReference = 9F777DFC2F912AB800B5FCFD /* CodePlaner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F777E082F912ABA00B5FCFD /* CodePlanerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F777E202F912ABA00B5FCFD /* Build configuration list for PBXNativeTarget "CodePlanerTests" */;
+			buildPhases = (
+				9F777E052F912ABA00B5FCFD /* Sources */,
+				9F777E062F912ABA00B5FCFD /* Frameworks */,
+				9F777E072F912ABA00B5FCFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F777E0B2F912ABA00B5FCFD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9F777E0C2F912ABA00B5FCFD /* CodePlanerTests */,
+			);
+			name = CodePlanerTests;
+			packageProductDependencies = (
+			);
+			productName = CodePlanerTests;
+			productReference = 9F777E092F912ABA00B5FCFD /* CodePlanerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F777E122F912ABA00B5FCFD /* CodePlanerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F777E232F912ABA00B5FCFD /* Build configuration list for PBXNativeTarget "CodePlanerUITests" */;
+			buildPhases = (
+				9F777E0F2F912ABA00B5FCFD /* Sources */,
+				9F777E102F912ABA00B5FCFD /* Frameworks */,
+				9F777E112F912ABA00B5FCFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F777E152F912ABA00B5FCFD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9F777E162F912ABA00B5FCFD /* CodePlanerUITests */,
+			);
+			name = CodePlanerUITests;
+			packageProductDependencies = (
+			);
+			productName = CodePlanerUITests;
+			productReference = 9F777E132F912ABA00B5FCFD /* CodePlanerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F777DF42F912AB800B5FCFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					9F777DFB2F912AB800B5FCFD = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					9F777E082F912ABA00B5FCFD = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 9F777DFB2F912AB800B5FCFD;
+					};
+					9F777E122F912ABA00B5FCFD = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 9F777DFB2F912AB800B5FCFD;
+					};
+				};
+			};
+			buildConfigurationList = 9F777DF72F912AB800B5FCFD /* Build configuration list for PBXProject "CodePlaner" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 9F777DF32F912AB800B5FCFD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9F777DFD2F912AB800B5FCFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F777DFB2F912AB800B5FCFD /* CodePlaner */,
+				9F777E082F912ABA00B5FCFD /* CodePlanerTests */,
+				9F777E122F912ABA00B5FCFD /* CodePlanerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F777DFA2F912AB800B5FCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F777E072F912ABA00B5FCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F777E112F912ABA00B5FCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AABBCC001122334455667788 /* Build Python Service */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Python Service";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/../service/dist/codingplan-service",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd \"$SRCROOT/../service\" && bash build_service.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F777DF82F912AB800B5FCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F777E052F912ABA00B5FCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F777E0F2F912ABA00B5FCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F777E0B2F912ABA00B5FCFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F777DFB2F912AB800B5FCFD /* CodePlaner */;
+			targetProxy = 9F777E0A2F912ABA00B5FCFD /* PBXContainerItemProxy */;
+		};
+		9F777E152F912ABA00B5FCFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F777DFB2F912AB800B5FCFD /* CodePlaner */;
+			targetProxy = 9F777E142F912ABA00B5FCFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9F777E1B2F912ABA00B5FCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F777E1C2F912ABA00B5FCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		9F777E1E2F912ABA00B5FCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chiang.allen.CodePlaner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9F777E1F2F912ABA00B5FCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chiang.allen.CodePlaner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9F777E212F912ABA00B5FCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chiang.allen.CodePlanerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodePlaner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodePlaner";
+			};
+			name = Debug;
+		};
+		9F777E222F912ABA00B5FCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chiang.allen.CodePlanerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodePlaner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodePlaner";
+			};
+			name = Release;
+		};
+		9F777E242F912ABA00B5FCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chiang.allen.CodePlanerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CodePlaner;
+			};
+			name = Debug;
+		};
+		9F777E252F912ABA00B5FCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chiang.allen.CodePlanerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CodePlaner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F777DF72F912AB800B5FCFD /* Build configuration list for PBXProject "CodePlaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F777E1B2F912ABA00B5FCFD /* Debug */,
+				9F777E1C2F912ABA00B5FCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F777E1D2F912ABA00B5FCFD /* Build configuration list for PBXNativeTarget "CodePlaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F777E1E2F912ABA00B5FCFD /* Debug */,
+				9F777E1F2F912ABA00B5FCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F777E202F912ABA00B5FCFD /* Build configuration list for PBXNativeTarget "CodePlanerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F777E212F912ABA00B5FCFD /* Debug */,
+				9F777E222F912ABA00B5FCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F777E232F912ABA00B5FCFD /* Build configuration list for PBXNativeTarget "CodePlanerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F777E242F912ABA00B5FCFD /* Debug */,
+				9F777E252F912ABA00B5FCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F777DF42F912AB800B5FCFD /* Project object */;
+}

@@ -1,0 +1,146 @@
+/* Dropdown Item labels */
+"dropdown_service_running" = "服务: 运行中";
+"dropdown_service_stopped" = "服务: 已停止";
+"dropdown_default_provider" = "默认: %@";
+"dropdown_default_tag" = "默认";
+"dropdown_start_service" = "启动服务";
+"dropdown_stop_service" = "停止服务";
+"dropdown_service_details" = "本地服务";
+"dropdown_service_url" = "服务地址: %@";
+"dropdown_api_key" = "API Key: %@";
+"dropdown_providers" = "厂商";
+"dropdown_no_configured_providers" = "未配置 App Key";
+"dropdown_top_clients" = "客户端";
+"dropdown_no_clients" = "暂无客户端";
+"dropdown_client_requests" = "%@ · %d 次请求";
+"dropdown_open_usage" = "打开用量面板...";
+"dropdown_settings" = "设置...";
+"dropdown_restart_service" = "重启服务";
+"dropdown_quit" = "退出";
+"dropdown_open_usage" = "打开面板...";
+
+/* Sidebar */
+"sidebar_usage" = "用量";
+"sidebar_providers" = "厂商";
+"sidebar_clients" = "客户端";
+"sidebar_settings" = "设置";
+
+/* Providers */
+"providers_title" = "厂商管理";
+"providers_subtitle" = "在这里配置 API Key、Base URL 和默认厂商。";
+"providers_default_provider" = "默认厂商";
+"providers_default_provider_help" = "当模型未指定厂商时使用。";
+"providers_active_section" = "已激活";
+"providers_active_section_help" = "已配置 API Key 的厂商。";
+"providers_active_empty" = "还没有厂商配置 API Key。";
+"providers_inactive_section" = "未激活";
+"providers_inactive_section_help" = "尚未配置 API Key 的厂商。";
+"providers_inactive_empty" = "所有厂商都已激活。";
+"provider_none" = "无";
+"provider_default_badge" = "默认";
+"provider_status_active" = "激活";
+"provider_status_inactive" = "未激活";
+"provider_activate_button" = "去激活";
+"provider_deactivate_button" = "反激活 (清除 API Key)";
+"provider_edit_button" = "修改";
+"provider_enabled" = "启用";
+"provider_base_url_label" = "Base URL";
+"provider_api_key_label" = "API Key";
+"provider_set_default" = "设为默认";
+"provider_save_base_url" = "保存地址";
+"provider_save_api_key" = "保存密钥";
+"provider_models_label" = "模型";
+"provider_add_title" = "添加自定义厂商";
+"provider_add_name_placeholder" = "名称（例如 my-openai）";
+"provider_add_models_placeholder" = "模型（逗号分隔）";
+"provider_add_button" = "添加厂商";
+"common_cancel" = "取消";
+
+/* Settings */
+"settings_title" = "CodingPlan 设置";
+"settings_default_provider" = "默认厂商:";
+"settings_none" = "无";
+"settings_auto_fallback" = "自动故障转移";
+"settings_provider_configs" = "厂商配置";
+"settings_save" = "保存";
+"settings_apply" = "应用";
+"settings_add_provider" = "添加自定义厂商";
+"settings_remove_provider" = "删除厂商";
+"settings_api_key_placeholder" = "API Key";
+"settings_base_url_label" = "Base URL";
+"settings_base_url_placeholder" = "Base URL";
+"settings_save_base_url" = "保存地址";
+"settings_models_label" = "模型: %@";
+
+/* Usage Dashboard */
+"usage_title" = "今日用量";
+"usage_service_status" = "服务";
+"usage_service_running" = "运行中";
+"usage_service_stopped" = "已停止";
+"usage_start_service" = "启动服务";
+"usage_stop_service" = "停止服务";
+"usage_cost" = "费用";
+"usage_by_client" = "按客户端";
+"usage_stat_requests" = "请求数";
+"usage_stat_total_tokens" = "总 Token";
+"usage_stat_prompt_tokens" = "输入 Token";
+"usage_stat_completion_tokens" = "输出 Token";
+"usage_by_provider" = "按厂商分布";
+"usage_no_data" = "暂无数据";
+"usage_chart_label_tokens" = "Token";
+"usage_chart_label_provider" = "厂商";
+
+/* Provider Row / Edit Sheet */
+"provider_loading_models" = "正在获取模型...";
+"provider_no_models_enabled" = "未启用任何模型";
+"provider_no_models_available" = "无可用模型";
+"provider_more_models" = "更多 (%d)...";
+"provider_all_models" = "全部模型 (%d)";
+"provider_add_model_manual" = "添加模型 (手动)";
+"provider_model_name_placeholder" = "输入模型名称...";
+"provider_add_and_select" = "添加并选中";
+"provider_enabled_models_label" = "启用模型";
+"provider_search_models_placeholder" = "搜索模型...";
+"provider_no_models_found" = "未找到模型";
+"provider_manual_tag" = "(手动)";
+
+/* Provider Names */
+"provider_name_bailian" = "百炼";
+"provider_name_volcengine" = "火山引擎";
+"provider_name_zhipu" = "智谱 AI";
+"provider_name_deepseek" = "DeepSeek";
+"provider_name_moonshot" = "月之暗面";
+"provider_name_minimax" = "MiniMax";
+"provider_name_xiaomi" = "小米大模型";
+"provider_name_siliconflow" = "硅基流动";
+"provider_name_hunyuan" = "腾讯混元";
+"provider_name_openai" = "OpenAI";
+"provider_name_anthropic" = "Anthropic";
+"provider_name_openrouter" = "OpenRouter";
+"provider_name_gemini" = "Google Gemini";
+"provider_name_mistral" = "Mistral AI";
+"provider_name_groq" = "Groq";
+"provider_name_cohere" = "Cohere";
+"provider_name_together" = "Together AI";
+
+/* Settings - Language */
+"settings_language" = "语言";
+"settings_language_auto" = "跟随系统";
+"settings_language_en" = "English";
+"settings_language_zh" = "简体中文";
+"settings_language_restart_notice" = "修改语言后需要重启应用生效";
+
+/* Settings Page */
+"settings_title" = "设置";
+"settings_network_header" = "网络";
+"settings_allow_lan" = "允许局域网连接";
+"settings_lan_address" = "局域网地址";
+"settings_appearance_header" = "外观与语言";
+"settings_service_header" = "服务配置";
+"settings_service_port" = "服务端口";
+"settings_local_api_key" = "本地 API Key";
+"settings_apply_footer" = "应用更改以更新配置并重启服务。";
+"settings_update_alert_title" = "设置更新";
+"settings_error_invalid_port" = "端口号无效。请使用 1024 到 65535 之间的端口。";
+"settings_error_port_conflict" = "端口 %d 已被其他进程占用。请选择其他端口。";
+"common_ok" = "确定";

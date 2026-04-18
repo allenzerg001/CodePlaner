@@ -1,0 +1,146 @@
+/* Dropdown Item labels */
+"dropdown_service_running" = "Service: Running";
+"dropdown_service_stopped" = "Service: Stopped";
+"dropdown_default_provider" = "Default: %@";
+"dropdown_default_tag" = "Default";
+"dropdown_start_service" = "Start Service";
+"dropdown_stop_service" = "Stop Service";
+"dropdown_service_details" = "Local Service";
+"dropdown_service_url" = "URL: %@";
+"dropdown_api_key" = "API Key: %@";
+"dropdown_providers" = "Providers";
+"dropdown_no_configured_providers" = "No configured API keys";
+"dropdown_top_clients" = "Clients";
+"dropdown_no_clients" = "No clients yet";
+"dropdown_client_requests" = "%@ · %d requests";
+"dropdown_open_usage" = "Open Usage Dashboard...";
+"dropdown_settings" = "Settings...";
+"dropdown_restart_service" = "Restart Service";
+"dropdown_quit" = "Quit";
+"dropdown_open_usage" = "Open Dashboard...";
+
+/* Sidebar */
+"sidebar_usage" = "Usage";
+"sidebar_providers" = "Providers";
+"sidebar_clients" = "Clients";
+"sidebar_settings" = "Settings";
+
+/* Providers */
+"providers_title" = "Provider Management";
+"providers_subtitle" = "Configure API keys, base URLs, and the default provider here.";
+"providers_default_provider" = "Default Provider";
+"providers_default_provider_help" = "Used when a model does not specify a provider.";
+"providers_active_section" = "Active";
+"providers_active_section_help" = "Providers with configured API keys.";
+"providers_active_empty" = "No providers have API keys yet.";
+"providers_inactive_section" = "Inactive";
+"providers_inactive_section_help" = "Providers without a configured API key.";
+"providers_inactive_empty" = "All providers are active.";
+"provider_none" = "None";
+"provider_default_badge" = "Default";
+"provider_status_active" = "Active";
+"provider_status_inactive" = "Inactive";
+"provider_activate_button" = "Activate";
+"provider_deactivate_button" = "Deactivate (Clear API Key)";
+"provider_edit_button" = "Edit";
+"provider_enabled" = "Enabled";
+"provider_base_url_label" = "Base URL";
+"provider_api_key_label" = "API Key";
+"provider_set_default" = "Set as Default";
+"provider_save_base_url" = "Save URL";
+"provider_save_api_key" = "Save Key";
+"provider_models_label" = "Models";
+"provider_add_title" = "Add Custom Provider";
+"provider_add_name_placeholder" = "Name (e.g. my-openai)";
+"provider_add_models_placeholder" = "Models (comma separated)";
+"provider_add_button" = "Add Provider";
+"common_cancel" = "Cancel";
+
+/* Settings */
+"settings_title" = "CodingPlan Settings";
+"settings_default_provider" = "Default Provider:";
+"settings_none" = "None";
+"settings_auto_fallback" = "Auto Fallback";
+"settings_provider_configs" = "Provider Configurations";
+"settings_save" = "Save";
+"settings_apply" = "Apply";
+"settings_add_provider" = "Add Custom Provider";
+"settings_remove_provider" = "Remove Provider";
+"settings_api_key_placeholder" = "API Key";
+"settings_base_url_label" = "Base URL";
+"settings_base_url_placeholder" = "Base URL";
+"settings_save_base_url" = "Save URL";
+"settings_models_label" = "Models: %@";
+
+/* Usage Dashboard */
+"usage_title" = "Today's Usage";
+"usage_service_status" = "Service";
+"usage_service_running" = "Running";
+"usage_service_stopped" = "Stopped";
+"usage_start_service" = "Start Service";
+"usage_stop_service" = "Stop Service";
+"usage_cost" = "Cost";
+"usage_by_client" = "By Client";
+"usage_stat_requests" = "Requests";
+"usage_stat_total_tokens" = "Total Tokens";
+"usage_stat_prompt_tokens" = "Input Tokens";
+"usage_stat_completion_tokens" = "Output Tokens";
+"usage_by_provider" = "Distribution by Provider";
+"usage_no_data" = "No data available";
+"usage_chart_label_tokens" = "Tokens";
+"usage_chart_label_provider" = "Provider";
+
+/* Provider Row / Edit Sheet */
+"provider_loading_models" = "Loading models...";
+"provider_no_models_enabled" = "No models enabled";
+"provider_no_models_available" = "No models available";
+"provider_more_models" = "More (%d)...";
+"provider_all_models" = "All Models (%d)";
+"provider_add_model_manual" = "Add Model (Manual)";
+"provider_model_name_placeholder" = "Enter model name...";
+"provider_add_and_select" = "Add & Select";
+"provider_enabled_models_label" = "Enabled Models";
+"provider_search_models_placeholder" = "Search models...";
+"provider_no_models_found" = "No models found";
+"provider_manual_tag" = "(manual)";
+
+/* Provider Names */
+"provider_name_bailian" = "Aliyun Bailian";
+"provider_name_volcengine" = "Volcengine";
+"provider_name_zhipu" = "Zhipu AI";
+"provider_name_deepseek" = "DeepSeek";
+"provider_name_moonshot" = "Moonshot (Kimi)";
+"provider_name_minimax" = "MiniMax";
+"provider_name_xiaomi" = "Xiaomi MiMo";
+"provider_name_siliconflow" = "SiliconFlow";
+"provider_name_hunyuan" = "Tencent Hunyuan";
+"provider_name_openai" = "OpenAI";
+"provider_name_anthropic" = "Anthropic";
+"provider_name_openrouter" = "OpenRouter";
+"provider_name_gemini" = "Google Gemini";
+"provider_name_mistral" = "Mistral AI";
+"provider_name_groq" = "Groq";
+"provider_name_cohere" = "Cohere";
+"provider_name_together" = "Together AI";
+
+/* Settings - Language */
+"settings_language" = "Language";
+"settings_language_auto" = "System Default";
+"settings_language_en" = "English";
+"settings_language_zh" = "Simplified Chinese";
+"settings_language_restart_notice" = "Restart required to apply language changes";
+
+/* Settings Page */
+"settings_title" = "Settings";
+"settings_network_header" = "Network";
+"settings_allow_lan" = "Allow LAN Connections";
+"settings_lan_address" = "LAN Address";
+"settings_appearance_header" = "Appearance & Language";
+"settings_service_header" = "Service Configuration";
+"settings_service_port" = "Service Port";
+"settings_local_api_key" = "Local API Key";
+"settings_apply_footer" = "Apply changes to update configuration and restart service.";
+"settings_update_alert_title" = "Settings Update";
+"settings_error_invalid_port" = "Invalid port number. Please use a port between 1024 and 65535.";
+"settings_error_port_conflict" = "Port %d is already in use by another process. Please choose a different port.";
+"common_ok" = "OK";

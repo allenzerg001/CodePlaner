@@ -1,0 +1,26 @@
+name: CodingPlan
+options:
+  bundleIdPrefix: com.codingplan
+targets:
+  CodingPlan:
+    type: executable
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - CodingPlan
+    dependencies:
+      - package: Alamofire
+    settings:
+      base:
+        PRODUCT_NAME: CodingPlan
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_LSUIElement: NO # Has main window and dock icon
+        INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2026 CodingPlan. All rights reserved."
+        LOCALIZATION_EXPORT_SUPPORTED: YES
+        SWIFT_VERSION: 5.9
+
+packages:
+  Alamofire:
+    url: https://github.com/Alamofire/Alamofire.git
+    from: 5.8.0
