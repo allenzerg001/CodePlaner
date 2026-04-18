@@ -12,6 +12,14 @@ CodingPlaner 是一款专为开发者设计的 macOS 原生应用，旨在提供
 
 ## ✨ 核心功能
 
+<p align="center">
+  <img src="docs/thumbnail/codeplaner_main1.png" width="45%" />
+  <img src="docs/thumbnail/codeplaner_main2.png" width="45%" />
+</p>
+<p align="center">
+  <img src="docs/thumbnail/codeplaner_dropdown.png" width="40%" />
+</p>
+
 - **多厂商聚合管理**：图形化界面一键激活、配置及切换 AI 厂商。
 - **实时用量统计**：
   - **Usage 面板**：按厂商统计 Token 消耗及请求占比，支持今日数据实时刷新。
