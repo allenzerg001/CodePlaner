@@ -1,0 +1,13 @@
+server:
+  host: 127.0.0.1
+  port: 9801
+default_provider: deepseek
+fallback_enabled: true
+providers:
+  deepseek:
+    enabled: true
+    base_url: https://api.deepseek.com/v1
+    api_key: sk-123
+    models:
+      - deepseek-chat
+      - deepseek-coder

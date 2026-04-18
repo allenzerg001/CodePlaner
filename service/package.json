@@ -1,0 +1,26 @@
+{
+  "name": "codingplan-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "ncc build src/main.ts -o dist -m",
+    "dev": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "better-sqlite3": "^12.9.0",
+    "fastify": "^4.26.0",
+    "undici": "^6.13.0",
+    "yaml": "^2.4.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20.11.0",
+    "@vercel/ncc": "^0.38.1",
+    "esbuild": "^0.20.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  }
+}
